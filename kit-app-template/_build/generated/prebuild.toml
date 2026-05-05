@@ -1,0 +1,86 @@
+[[root]]
+link = [
+	["${root}/source/apps", "${root}/_build/${platform}/${config}/apps"],
+]
+
+[[root]]
+link = [
+	["${root}/_build/PACKAGE-LICENSES", "${root}/_build/${platform}/${config}/PACKAGE-LICENSES"],
+]
+
+[[root]]
+link = [
+	["${root}/tools/packman", "${root}/_build/${platform}/${config}/dev/tools/packman"],
+]
+
+[[root]]
+copy = [
+	["${root}/repo${shell_ext}", "${root}/_build/${platform}/${config}/dev"],
+	["${root}/tools/repoman/repoman.py", "${root}/_build/${platform}/${config}/dev/tools/repoman"],
+]
+
+[[root]]
+copy = [
+	["${root}/tools/repoman/repoman_bootstrapper.py", "${root}/_build/${platform}/${config}/dev/tools/repoman"],
+]
+
+[[root]]
+copy = [
+	["${root}/tools/deps/repo-deps.packman.xml", "${root}/_build/${platform}/${config}/dev/tools/deps"],
+]
+
+[[root]]
+copy = [
+	["C:/projects/kit-app-template/_repo/deps/repo_kit_tools/kit-template/tools/autopull/pull_extensions/${config}/pull_kit_sdk${shell_ext}", "${root}/_build/${platform}/${config}"],
+	["C:/projects/kit-app-template/_repo/deps/repo_kit_tools/kit-template/tools/autopull/pull_extensions/tinypull.py", "${root}/_build/${platform}/${config}/dev/tools"],
+]
+
+[[root]]
+link = [
+	["c:/projects/kit-app-template/source/extensions/omni.performance.monitor/config", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/config"],
+]
+
+[[root]]
+link = [
+	["${root}/_build/PACKAGE-LICENSES", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/PACKAGE-LICENSES/dependencies"],
+]
+
+[[root]]
+copy = [
+	["${root}/_build/${platform}/${config}/kit/dev/tools/license-templates/ext-LICENSE-TEMPLATE.md", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/PACKAGE-LICENSES/omni.performance.monitor-LICENSE.md"],
+]
+
+[[root]]
+link = [
+	["c:/projects/kit-app-template/source/extensions/omni.performance.monitor/data", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/data"],
+	["c:/projects/kit-app-template/source/extensions/omni.performance.monitor/docs", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/docs"],
+	["c:/projects/kit-app-template/source/extensions/omni.performance.monitor/omni", "${root}/_build/${platform}/${config}/exts/omni.performance.monitor/omni"],
+]
+
+[[root]]
+link = [
+	["c:/projects/kit-app-template/source/extensions/omni.webcam.viewport/config", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/config"],
+]
+
+[[root]]
+link = [
+	["${root}/_build/PACKAGE-LICENSES", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/PACKAGE-LICENSES/dependencies"],
+]
+
+[[root]]
+copy = [
+	["${root}/_build/${platform}/${config}/kit/dev/tools/license-templates/ext-LICENSE-TEMPLATE.md", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/PACKAGE-LICENSES/omni.webcam.viewport-LICENSE.md"],
+]
+
+[[root]]
+link = [
+	["c:/projects/kit-app-template/source/extensions/omni.webcam.viewport/data", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/data"],
+	["c:/projects/kit-app-template/source/extensions/omni.webcam.viewport/docs", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/docs"],
+	["c:/projects/kit-app-template/source/extensions/omni.webcam.viewport/omni", "${root}/_build/${platform}/${config}/exts/omni.webcam.viewport/omni"],
+]
+
+[[root]]
+copy = [
+	["${root}/tools/deps/user.toml", "${root}/_build/deps/user.toml"],
+]
+

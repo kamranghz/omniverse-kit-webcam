@@ -1,0 +1,1 @@
+/mnt/c/Users/kghol072/AppData/Local/ov/data/exts/v2/carb.windowing.plugins-b7f89989ed27218a

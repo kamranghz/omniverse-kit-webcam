@@ -1,0 +1,1 @@
+/mnt/c/Users/kghol072/AppData/Local/ov/data/exts/v2/omni.hydra.rtx.shadercache.d3d12-347d59bb6595f4e1

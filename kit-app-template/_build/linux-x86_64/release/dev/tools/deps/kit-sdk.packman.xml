@@ -1,0 +1,5 @@
+<project toolsVersion="5.0">
+  <dependency name="kit_sdk_${config}" linkPath="../../../kit" tags="${config} non-redist">
+    <package name="kit-kernel" version="108.0.0+feature.221586.5941509b.gl.${platform_target_abi}.${config}" />
+  </dependency>
+</project>

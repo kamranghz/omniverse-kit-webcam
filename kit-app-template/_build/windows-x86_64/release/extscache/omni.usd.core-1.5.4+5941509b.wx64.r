@@ -1,0 +1,1 @@
+/mnt/c/Users/kghol072/AppData/Local/ov/data/exts/v2/omni.usd.core-3359d4a8da1e067f

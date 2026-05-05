@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+SCRIPT_DIR=$(dirname ${BASH_SOURCE})
+if [ ! -z "$OMNI_KIT_LD_PRELOAD" ]; then
+    export LD_PRELOAD="$OMNI_KIT_LD_PRELOAD:$LD_PRELOAD"
+fi
+if [ "$_MR_BUILD_WITH_ASAN" == "true" ]; then
+    export LIB_ASAN_PATH=$SCRIPT_DIR/libasan.so.6
+    export ASAN_OPTIONS="protect_shadow_gap=0:halt_on_error=0:detect_leaks=1"
+    export LSAN_OPTIONS="exitcode=0"
+    if [ "$LD_PRELOAD" != *"libasan.so"* ]; then
+        export LD_PRELOAD="${LIB_ASAN_PATH}${LD_PRELOAD:+:$LD_PRELOAD}"
+    fi
+    echo "ASAN_OPTIONS=${ASAN_OPTIONS}"
+    echo "LSAN_OPTIONS=${LSAN_OPTIONS}"
+    echo "LIB_ASAN_PATH=${LIB_ASAN_PATH}"
+    echo "LD_PRELOAD=${LD_PRELOAD}"
+fi
+${EXEC:-exec} "$SCRIPT_DIR/kit/kit"  --enable omni.kit.test --enable omni.kit.loop-default --/app/enableStdoutOutput=0 --/exts/omni.kit.test/testExts/0='my_company.my_editor.kit' --ext-folder "$SCRIPT_DIR/exts"  --ext-folder "$SCRIPT_DIR/extscache"  --ext-folder "$SCRIPT_DIR/apps"  --/exts/omni.kit.test/testExtOutputPath="$SCRIPT_DIR/../../../_testoutput"  --portable-root "$SCRIPT_DIR/"  --/telemetry/mode=test --/crashreporter/data/testName="ext-test-my_company.my_editor.kit" "$@"

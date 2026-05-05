@@ -1,0 +1,1 @@
+/home/kamran/.local/share/ov/data/exts/v2/omni.hydra.rtx-092506c99880607e

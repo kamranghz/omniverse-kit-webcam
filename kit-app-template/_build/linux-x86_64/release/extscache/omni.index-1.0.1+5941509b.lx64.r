@@ -1,0 +1,1 @@
+/home/kamran/.local/share/ov/data/exts/v2/omni.index-34fbb2efa166ecd9
