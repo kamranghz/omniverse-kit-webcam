@@ -8,16 +8,6 @@ The sample application **`source/apps/my_company.my_editor.kit`** declares **`"o
 
 ---
 
-## Full documentation
-
-The repo root README has the **complete** layout, technology notes, and developer path:
-
-**[README.md](../README.md)**
-
-Use it as the single place for long-form instructions; this file stays short.
-
----
-
 ## Build and launch
 
 From **this folder**, with Conda env **`omni-webcam`** created from **`environment.yml`**:
