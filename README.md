@@ -1,4 +1,4 @@
-# Omniverse Kit — Live Webcam (this folder)
+# Omniverse Kit — Live Webcam 
 
 **Repository:** [github.com/kamranghz/omniverse-kit-webcam](https://github.com/kamranghz/omniverse-kit-webcam)
 
