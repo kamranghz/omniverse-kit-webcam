@@ -22,14 +22,6 @@ From **this folder**, with Conda env **`omni-webcam`** created from **`environme
 ./repo.sh launch
 ```
 
----
-
-## Docs in this tree
-
-| File | Contents |
-|------|----------|
-| [README_WEBCAM_EXTENSION.md](README_WEBCAM_EXTENSION.md) | Extension setup, USD paths, troubleshooting |
-| [source/extensions/omni.webcam.viewport/README.md](source/extensions/omni.webcam.viewport/README.md) | Extension package and main source files |
 
 ---
 
